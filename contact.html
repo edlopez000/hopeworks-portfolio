@@ -1,93 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
     <title>Contact Me</title>
   </head>
-  <body id="container">
+  <body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a
-        class="navbar-brand justify-content-center"
-        id="nav-name"
-        href="index.html"
-        >Portfolio Name or Logo</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarNavDropdown"
-      >
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.html">contact me</a>
-          </li>
-        </ul>
+      <div class="container-fluid">
+        <a
+          class="navbar-brand justify-content-center"
+          id="nav-name"
+          href="index.html"
+          >Edward's Portfolio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">contact me</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <main>
-      <article>
-        <h1 class="text-center">Contact Me</h1>
-        <form name="contact" method="POST" data-netlify="true">
-          <fieldset class="d-flex flex-column">
-            <input
-              id="name"
-              type="text"
-              required
-              class="mb-3"
-              placeholder="Name *"
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              class="mb-3"
-              placeholder="E-mail *"
-            />
-            <input
-              type="number"
-              name="number"
-              id="number"
-              class="mb-3"
-              placeholder="Phone"
-            />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              class="mb-3"
-              placeholder="Message *"
-              required
-            ></textarea>
-            <button type="submit" class="mb-3">Contact Me</button>
-          </fieldset>
-        </form>
-      </article>
+    <main class="flex-shrink-0">
+      <!-- Garbage-tier HTML below -->
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="container d-flex align-items-center justify-content-center">
+        <article class="container">
+          <h1 class="text-center">Contact Me</h1>
+          <form name="contact" method="POST" data-netlify="true">
+            <fieldset class="d-flex flex-column">
+              <input
+                id="name"
+                type="text"
+                required
+                class="mb-3"
+                placeholder="Name *"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                class="mb-3"
+                placeholder="E-mail *"
+              />
+              <input
+                type="text"
+                name="number"
+                id="number"
+                class="mb-3"
+                placeholder="Phone"
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                class="mb-3"
+                placeholder="Message *"
+                required
+              ></textarea>
+              <button type="submit" class="mb-3">Contact Me</button>
+            </fieldset>
+          </form>
+        </article>
+      </div>
     </main>
-    <footer class="footer d-flex justify-content-center bg-primary">
-      <p class="text-light">Standard footer jazz&trade;</p>
+    <footer class="footer mt-auto py-1 bg-primary">
+      <div class="container">
+        <p class="text-light text-center">Standard footer jazz&trade;</p>
+      </div>
     </footer>
   </body>
 </html>
