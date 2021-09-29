@@ -47,14 +47,14 @@
       </div>
     </nav>
     <main class="flex-shrink-0">
-      <div class="container px-5">
+      <div class="container d-flex flex-column justify-content-center">
         <h1 class="text-center">Welcome!</h1>
         <img
-          class="img-fluid px-5"
-          src="media/background.png"
+          class="img-fluid col-lg-7 mx-auto border border-1 border-primary"
+          src="media/svelteBackground.png"
           alt="Image of a laptop"
         />
-        <p class="m-5">
+        <p class="m-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
           voluptatem, sequi itaque quis iste aut vitae necessitatibus atque
           excepturi debitis libero! Temporibus, aut cumque. Quia tempora quaerat
@@ -70,12 +70,23 @@
       </div>
     </main>
 
-    <footer class="footer mt-auto bg-primary">
-      <div class="container">
+    <footer
+      class="
+        footer
+        mt-auto
+        bg-primary
+        d-flex
+        flex-row
+        justify-content-center
+        align-items-center
+        pt-1
+      "
+    >
+      <div class="container-fluid">
         <p class="text-light text-center">
-          copyright © 2021 me but is that really how that works?
-          <a href="https://github.com/edlopez000" id="github-logo"
-          ><img src="/media/github-logo.png" class=""/>
+          copyright &copy; 2021 me but is that really how that works?
+          <a href="https://github.com/edlopez000" id="github-logo" />
+          <img src="/media/github-logo.png" class="" />
         </p>
       </div>
     </footer>
