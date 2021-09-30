@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
     <title>Contact Me</title>
   </head>
@@ -18,7 +18,7 @@
           class="navbar-brand justify-content-center"
           id="nav-name"
           href="index.html"
-          >Edward's Portfolio</a
+          >Ed's Portfolio</a
         >
         <button
           class="navbar-toggler"
@@ -40,7 +40,7 @@
               <a class="nav-link" href="about.html">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">portfolio</a>
+              <a class="nav-link" href="portfolio.html">portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="contact.html">contact me</a>
@@ -50,14 +50,39 @@
       </div>
     </nav>
     <main class="flex-shrink-0">
-      <!-- Garbage-tier HTML below -->
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="container d-flex align-items-center justify-content-center">
+      <div
+        class="
+          container
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-center
+        "
+      >
+        <div class="container-fluid">
+          <h1 class="text-center">Connect with me online!</h1>
+          <p class="text-center">
+            <a
+              href="https://www.linkedin.com/in/edward-a-lopez-ramos-222b3721b/"
+              ><img
+                src="media/linkedin_black.png"
+                alt="LinkedIn logo"
+                class="ico"
+            /></a>
+            <a href="https://github.com/edlopez000"
+              ><img
+                src="media/github-logo-black.png"
+                alt="Github logo"
+                class="ico"
+            /></a>
+            <a href="mailto:lopez.edward@outlook.com"
+              ><img src="media/email.png" alt="E-mail logo" class="ico"
+            /></a>
+          </p>
+        </div>
         <article class="container">
-          <h1 class="text-center">Contact Me</h1>
+          <h1 class="text-center">Or</h1>
+          <h1 class="text-center">Contact Me Here</h1>
           <form name="contact" method="POST" data-netlify="true">
             <fieldset class="d-flex flex-column col-lg-5 mx-auto py-auto">
               <input
@@ -112,8 +137,9 @@
       <div class="container-fluid">
         <p class="text-light text-center">
           copyright &copy; 2021 me but is that really how that works?
-          <a href="https://github.com/edlopez000" id="github-logo" />
-          <img src="/media/github-logo.png" class="" />
+          <a href="https://github.com/edlopez000" id="github-logo">
+            <img src="/media/github-logo.png" />
+          </a>
         </p>
       </div>
     </footer>

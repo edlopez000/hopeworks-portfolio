@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand justify-content-center"
+          id="nav-name"
+          href="index.html"
+          >Ed's Portfolio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="flex-shrink-0">
+      <h1 class="text-center">Portfolio</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col m-1">
+            <div
+              id="portfolioCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#portfolioCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#portfolioCarousel"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#portfolioCarousel"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#portfolioCarousel"
+                  data-bs-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#portfolioCarousel"
+                  data-bs-slide-to="4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div
+                  class="carousel-item active"
+                  id="Personal Website"
+                  data-bs-interval="100000"
+                >
+                  <img
+                    src="media/carousel/greyBlock.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Personal Website</h5>
+                    <!-- <p>
+                      May use this space for adding captions but that seems redundant when you consider the right paragraph.
+                    </p> -->
+                  </div>
+                </div>
+                <div
+                  class="carousel-item"
+                  data-bs-interval="100000"
+                  id="Wordpress"
+                >
+                  <img
+                    src="media/carousel/cyanBlock.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Wordpress</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="100000" id="GIS">
+                  <img
+                    src="media/carousel/greyBlock.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>GIS</h5>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item"
+                  data-bs-interval="100000"
+                  id="Production Test"
+                >
+                  <img
+                    src="media/carousel/blueBlock.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Production Test</h5>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item"
+                  data-bs-interval="100000"
+                  id="GIS Certificate Generator"
+                >
+                  <img
+                    src="media/carousel/greyBlock.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>GIS Certificate Generator</h5>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#portfolioCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#portfolioCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <h2 class="text-center" id="projectTitle">Personal Website</h2>
+            <p id="objective">Standard objective text</p>
+            <p id="approach">Standard approach text</p>
+            <p id="project-duration">Standard project duration text</p>
+            <p id="tidbit">Standard tidbit text</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col gy-5 gx-5">
+            <h1 class="text-center">Primary Tools</h1>
+            <div class="d-flex align-items-center justify-content-evenly">
+              <img
+                src="media/tools/html.png"
+                alt="HTML logo"
+                class="toolsIco"
+                title="HTML"
+              />
+              <img
+                src="media/tools/css.png"
+                alt="CSS logo"
+                class="toolsIco"
+                title="CSS"
+              />
+              <img
+                src="media/tools/javascript.png"
+                alt="JavaScript logo"
+                class="toolsIco"
+                title="JavaScript"
+              />
+              <img
+                src="media/tools/git.png"
+                alt="Git logo"
+                class="toolsIco"
+                title="Git"
+              />
+              <img
+                src="media/tools/netlify.png"
+                alt="Netlify logo"
+                class="toolsIco"
+                title="Netlify"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="
+        footer
+        mt-auto
+        bg-primary
+        d-flex
+        flex-row
+        justify-content-center
+        align-items-center
+        pt-1
+      "
+    >
+      <div class="container-fluid">
+        <p class="text-light text-center">
+          copyright &copy; 2021 me but is that really how that works?
+          <a href="https://github.com/edlopez000" id="github-logo">
+            <img src="/media/github-logo.png" />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
